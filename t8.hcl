@@ -16,3 +16,11 @@ parameter "authors" {
   ]
 }
 
+parameter "sql_dialect" {
+  type = "option"
+  description = "the SQL dialect"
+  default = [
+    "postgresql",
+    "mysql",
+  ]
+}
